@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+  <meta charset="UTF-8">
+  <title>테이블 제작_조유영</title>
+  <style>
+    table {
+      width: 800px; 
+      height: auto;
+      border-width: 1px;
+      border-style: solid;
+      border-color: #888;
+      border-spacing: 0;
+      border-collapse: collapse;
+    }
+    tr {width: 100%; height: 25px;}
+
+    th, td{
+      border-width: 1px;
+      border-style: solid;
+      border-color: #888;
+    }
+
+    caption { font-size: 24px; font-weight: bold; padding: 20px; }
+
+    thead {
+      height: 30px;
+      background-color: rgba(0, 38, 255, 0.616);
+      color: white;
+    }
+
+    .cell_01 {width: 50px;}
+    .cell_02 {width: 130px;}
+    .cell_03 {width: 100px;}
+    .cell_04 {width: 100px;}
+    .cell_05 {width: 360px;}
+    .cell_06 {width: 60px;}
+
+    tbody {
+      height: 25px;
+    }
+
+    td {
+      padding-left: 10px;
+    }
+
+    .center {
+      padding-left: 0;
+      text-align: center;
+    }
+
+    .line_impact { background-color: rgb(174, 221, 240) }
+    .line_border {
+      border-bottom: 3px;
+      border-style: solid;
+      border-color: black;
+    }
+
+  </style>
+</head>
+<body>
+  <table>
+    <caption>웹 개발자 채용 정보</caption>
+    <colgroup>
+      <col class="cell_01">
+      <col class="cell_02">
+      <col class="cell_03" >
+      <col class="cell_04">
+      <col class="cell_05">
+      <col class="cell_06">
+    </colgroup>
+
+    <thead>
+      <tr>
+        <th>No.</th>
+        <th>회사</th>
+        <th>회사명</th>
+        <th>마감일</th>
+        <th>지원분야</th>
+        <th>링크</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr >
+        <th rowspan="3" class="line_border">1</th>
+        <td rowspan="3" class="center line_border"><img src="../007_table_source/img/rockit.png" alt="로켓"></td>
+        <td>rockit</td>
+        <td>8.14</td>
+        <td>웹서비스</td>
+        <td rowspan="2" class="center"><ins>지원</ins></td>
+      </tr>
+      <tr>
+        <td colspan="3">프론트엔드 개발자 최소 4,000만원 / 신입, 경력</td>
+      </tr>
+      <tr>
+        <td colspan="4" class="line_border">클라우드 기술을 기반으로 IT기술 교육 서비스를 제공합니다.</td>
+      </tr>
+
+
+      <tr class="line_impact">
+        <th rowspan="3" class="line_border">2</th>
+        <td rowspan="3" class="center line_border"><img src="../007_table_source/img/rich.png" alt="돈주머니"></td>
+        <td>rich</td>
+        <td>9.01</td>
+        <td>소프트웨어개발</td>
+        <td rowspan="2" class="center"><ins>지원</ins></td>
+      </tr>
+      <tr class="line_impact">
+        <td colspan="3">프론트엔드 개발자 최소 2,500만원 / 신입</td>
+      </tr>
+      <tr class="line_impact">
+        <td colspan="4" class="line_border">클라우드 기술을 기반으로 IT기술 교육 서비스를 제공합니다.</td>
+      </tr>
+
+
+      <tr>
+        <th rowspan="3" class="line_border">3</th>
+        <td rowspan="3" class="center line_border"><img src="../007_table_source/img/rose.png" alt="꽃"></td>
+        <td>rose</td>
+        <td>7.01</td>
+        <td>웹서비스 소프트웨어개발</td>
+        <td rowspan="2" class="center"><ins>지원</ins></td>
+      </tr>
+      <tr>
+        <td colspan="3">프론트엔드 개발자 최소 4,000만원 / 신입, 경력</td>
+      </tr>
+      <tr>
+        <td colspan="4" class="line_border">화훼 농작물 관리시스템 구축 서비스를 제공합니다.</td>
+      </tr>
+      <tr class="line_impact">
+
+
+        <th rowspan="3" class="line_border">4</th>
+        <td rowspan="3" class="center line_border"><img src="../007_table_source/img/gell_gom.png" alt="곰젤리"></td>
+        <td>젤곰</td>
+        <td>7.24</td>
+        <td>개발</td>
+        <td rowspan="2" class="center"><ins>지원</ins></td>
+      </tr>
+      <tr class="line_impact">
+        <td colspan="3">프론트엔드 개발자 최소 3,000만원 / 신입, 경력</td>
+      </tr>
+      <tr class="line_impact">
+        <td colspan="4" class="line_border">캐릭터 사업분야로 게임 및 웹개발 산업 분야</td>
+      </tr>
+    </tbody>
+
+  </table>
+</body>
+</html>
