@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<!-- 강의 39분부터시작 -->
 <html lang="ko-KR">
   <head>
     <meta charset="UTF-8">
@@ -6,7 +7,6 @@
     <style>
       table {
         width: 900px; height: auto; min-height: 100px;
-        background-color: rgb(237, 250, 252);
         border-width: 1px;
         border-style: solid;
         border-color: black;
@@ -21,6 +21,17 @@
         border-style: solid;
         border-color: black;
       }
+
+      thead { color: white; background-color: hsl(221, 38%, 50%); }
+      tbody { background-color: lightblue; }
+
+      .line_impact { background-color: lightskyblue;}
+      
+      .cell_01 { width: 80px; }
+      .cell_02 { width: 100px; }
+      /* .cell_03 { width: 100px; } */
+      .cell_04 { width: 400px; }
+
     </style>
   </head>
   <body>
@@ -29,48 +40,64 @@
 
     <table>
       <caption>테이블 구조 기본 형태 이해하기</caption>
-      <tr>
-        <th>ID no.</th>
-        <th>성</th>
-        <th>이름</th>
-        <th>이메일</th>
-        <th>작성일</th>
-      </tr>
-      <tr>
-        <td>001</td>
-        <td>Mark</td>
-        <td>Octo</td>
-        <td><a href="#">mark@emali.com</a></td>
-        <td>2-5</td>
-      </tr>
-      <tr>
-        <td>002</td>
-        <td>Json</td>
-        <td>Airdays</td>
-        <td><a href="#">mark@emali.com</a></td>
-        <td>3-5</td>
-      </tr>
-      <tr>
-        <td>003</td>
-        <td>Larry</td>
-        <td>Visualy</td>
-        <td><a href="#">mark@emali.com</a></td>
-        <td>4-5</td>
-      </tr>
-      <tr>
-        <td>004</td>
-        <td>Gray</td>
-        <td>Bootlamp</td>
-        <td><a href="#">mark@emali.com</a></td>
-        <td>5-5</td>
-      </tr>
-      <tr>
-        <td>005</td>
-        <td>Park</td>
-        <td>-</td>
-        <td><a href="#">mark@emali.com</a></td>
-        <td>6-5</td>
-      </tr>
+
+      <colgroup>
+       <col class="cell_01">
+       <col class="cell_02" span="2">
+       <col class="cell_03">
+       <col class="cell_04">
+       <col class="cell_05">
+      </colgroup>
+
+      <thead>
+        <tr>
+          <th>ID no.</th>
+          <th>성</th>
+          <th>이름</th>
+          <th>이메일</th>
+          <th>작성일</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="line_impact">
+          <th>001</th>
+          <td colspan="2">Mark Octo</td>
+          <td><a href="#">mark@emali.com</a></td>
+          <td>02.04</td>
+        </tr>
+        <tr>
+          <th>002</th>
+          <td>Json</td>
+          <td>Airdays</td>
+          <td><a href="#">mark@emali.com</a></td>
+          <td>02.04</td>
+        </tr>
+        <tr class="line_impact">
+          <th>003</th>
+          <td>Larry</td>
+          <td>Visualy</td>
+          <td><a href="#">mark@emali.com</a></td>
+          <td>02.04</td>
+        </tr>
+        <tr>
+          <th>004</th>
+          <td>Gray</td>
+          <td>Bootlamp</td>
+          <td><a href="#">mark@emali.com</a></td>
+          <td>02.04</td>
+        </tr>
+        <tr class="line_impact">
+          <th rowspan="2">005</th>
+          <td rowspan="2">Park</td>
+          <td rowspan="2">-</td>
+          <td><a href="#">mark@emali.com</a></td>
+          <td>02.04</td>
+        </tr>
+        <tr>
+          <td><a href="#">mark2@emali.com</a></td>
+          <td>02.04</td>
+        </tr>
+      </tbody>
     </table>
     
   </body>
