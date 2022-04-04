@@ -3,7 +3,7 @@
 /* reset.css */
 body {
   margin: 0; line-height: 100%;
-  font-family: sans-serif;
+  font-family: 'Noto Sans Korean', sans-serif;
 }
 
 h1,h2,h3,h4,h5,h6,p,pre,q,blockquote,ul,ol,dl,dt,dd,img{
