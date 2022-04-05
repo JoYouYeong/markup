@@ -81,7 +81,7 @@
 /*--------------*/
 .slide_btn {
   position: absolute; top: 0; bottom: 0; left: 0; right: 0; margin: auto;
-  width: 100%; min-width: 940px; max-width: 1440px; height: 40px;
+  width: 100%; min-width: 940px; max-width: 1440px; height: 0;
 }
 
 .slide_btn button { width: 60px; height: 40px; background-color: #0cc;}
@@ -94,6 +94,9 @@
   width: 780px; height: 400px;
   margin: auto; 
   background-color: #ddd;}
+
+
+
 
 /* #newBox ---------------------------------------- */
 #newBox     {
@@ -208,11 +211,12 @@
   width: 100%; height: 100px;
   padding: 10px 0; box-sizing: border-box;
   background-color: #999; }
-.sponsor_area { 
+.sponsor_area {
+  overflow: hidden; 
   height: 80px; 
   background-color: #fff;}
 
-.sponsor_area ul { overflow: hidden; width: 100%; height: 100%;} 
+.sponsor_area ul { width: 100%; height: 100%;} 
 .sponsor_area li {
   float: left; width: 140px; height: 80px;
   margin-left: 20px; 
