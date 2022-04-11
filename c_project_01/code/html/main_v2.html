@@ -6,6 +6,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../font/fontawesome5/css/all.min.css">
+
   <link rel="stylesheet" href="../css/common/reset.css">
   <link rel="stylesheet" href="../css/common/common.css">
   <link rel="stylesheet" href="../css/src/main_v2.css">
@@ -15,27 +17,27 @@
   <div id="wrap">
     <header id="headBox">
       <div class="area_head">
-        <h1 id="logo">osam</h1>
+        <h1 id="logo" class="blind_area"><a href="../index.html"><span>osam</span></a></h1>
         <nav id="navBox">
           <h2 class="blind">page navigation</h2>
           <div class="unb">
             <h3 class="blind">사용자 설정 네비게이션</h3>
-            <ul class="clearfix first_margin">
-              <li>unb_01</li>
-              <li>unb_02</li>
-              <li>unb_03</li>
-              <li>unb_04</li>
+            <ul class="clearfix">
+              <li><a href="#">한국어</a></li>
+              <li><a href="#">sign in</a></li>
+              <li><a href="#">sing up</a></li>
+              <li><a href="#">site map</a></li>
             </ul>
           </div>
           <div class="gnb">
             <h3 class="blind">페이지 전체 네비게이션</h3>
             <ul class="clearfix first_margin">
-              <li>gnb_01</li>
-              <li>gnb_02</li>
-              <li>gnb_03</li>
-              <li>gnb_04</li>
-              <li>gnb_05</li>
-              <li>gnb_06</li>
+              <li><a href="#">about us</a></li>
+              <li><a href="#">menu</a></li>
+              <li><a href="#">gift</a></li>
+              <li><a href="#"><abbr title="Frequently Asked Questions">F A Q</abbr></a></li>
+              <li><a href="#">event</a></li>
+              <li><a href="#">notice</a></li>
             </ul>
           </div>
         </nav>
@@ -44,33 +46,51 @@
 
     <section id="slideBox">
       <h2 class="blind">주요 광고영역</h2>
-      <div class="slide_btn">
-        <button type="button" class="next">다음 내용 보기</button>
-        <button type="button" class="prev">이전 내용 보기</button>
+      <div class="slide_btn blind_area">
+        <button type="button" class="next"><span>다음 내용 보기</span></button>
+        <button type="button" class="prev"><span>이전 내용 보기</span></button>
       </div>
-      <div id="adCon_01">
-        adCon_01
-      </div>
+      <div class="slide_area">
+        <div id="adCon_01" class="slide_content">
+          <div class="slide_content_part">
+            <h3>adCon_01</h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aperiam, rem.
+            </p>
+            <div class="link">
+              <a href="#">
+                바로가기
+                <i class="fa-solid fa-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+          <figure class="slide_img_part">
+            <figcaption class="blind">슬라이드 부연 제목</figcaption>
+            <div class="slide_01">
+              <span class="blind">슬라이드 설명에 따른 부연 이미지 설명</span>
+            </div>
+          </figure>
+        </div>
+    </div>
     </section> <!-- // #slideBox -->
 
     <article id="newBox">
-      <h2 class="area_title">area_title</h2>
+      <h2 class="area_title">최신상품</h2>
 
       <div class="area_indicator">
         <!-- area_indicator -->
-       <ul>
-         <li><button><span>1</span></button></li>
-         <li><button><span>2</span></button></li>
-         <li><button><span>3</span></button></li>
+       <ul class="blind_area">
+         <li><a href="#"><span>최신 첫번째 내용</span></a></li>
+         <li><a href="#"><span>최신 두번째 내용</span></a></li>
+         <li><a href="#"><span>최신 세번째 내용</span></a></li>
        </ul>  
      </div>
 
-      <div class="area_content first_margin">
+      <div class="area_content first_margin blind_area">
          <!-- area_content -->
         <ul>
-          <li><a href="#">card_01</a></li>
-          <li><a href="#">card_02</a></li>
-          <li><a href="#">card_03</a></li>
+          <li><a href="#"><span>card_01</span></a></li>
+          <li><a href="#"><span>card_02</span></a></li>
+          <li><a href="#"><span>card_03</span></a></li>
         </ul>  
       </div>
       
