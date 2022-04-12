@@ -1,0 +1,7 @@
+/* d_032_iframe */
+
+.code_exam .ex_wrap {
+  height: 800px;
+}
+
+iframe { width: 100%; height: 700px ;border: 0; background-color: rgb(255, 161, 222);}
